@@ -39,7 +39,7 @@ namespace _7DLogger
             Paragraph p0 = new Paragraph(po);
             Paragraph p1 = new Paragraph(" ");
             Paragraph p2 = new Paragraph(content);
-            Paragraph p3 = new Paragraph("=============================================");
+            Paragraph p3 = new Paragraph("=================================");
             doc.Add(p0);
             doc.Add(p1);
             doc.Add(p2);
@@ -98,7 +98,7 @@ namespace _7DLogger
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("No local logs found, please create new");
             }
 
 
@@ -129,7 +129,7 @@ namespace _7DLogger
             
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                
             }
             return main;
         }
